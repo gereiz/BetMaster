@@ -58,7 +58,7 @@
                                                             <span>{{number_format((getAmount($data->dividend) / getAmount($data->divisor) + 1), 2, ',', '.')}}</span>
 
                                                             {{-- Odds Fracionárias --}}
-                                                            <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span>
+                                                            {{-- <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span> --}}
                                                         </a>
                                                     </li>
                                                 @else
