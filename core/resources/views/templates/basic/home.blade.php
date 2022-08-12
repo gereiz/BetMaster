@@ -65,6 +65,11 @@
                                                     <li>
                                                         <a href="#loginModal" class="nav-link" data-bs-toggle="modal" >
                                                             <span>{{__($data->name)}} </span>
+
+                                                            {{-- Odds Decimais --}}
+                                                            <span>{{number_format((getAmount($data->dividend) / getAmount($data->divisor) + 1), 2, ',', '.')}}</span>
+
+                                                            {{-- Odds Fracionárias --}}
                                                             <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span>
                                                         </a>
                                                     </li>
