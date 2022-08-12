@@ -127,7 +127,7 @@ class ManageUsersController extends Controller
         $totalTransaction = Transaction::where('user_id',$user->id)->count();
         $totalBet = Bet::where('user_id', $user->id)->count();
         $totalReferral = User::where('ref_by',$user->id)->count();
-        $totalCommission = CommissionLog::where('to_id',$user->id)->sum('commission_amount');
+        $totalCommission = CommissionLog::where('to_id',$user->id)->sum('amount');
         $countries = json_decode(file_get_contents(resource_path('views/partials/country.json')));
         return view('admin.users.detail', compact('pageTitle', 'user','totalDeposit','totalWithdraw','totalTransaction','totalBet','totalReferral','totalCommission','countries'));
     }
