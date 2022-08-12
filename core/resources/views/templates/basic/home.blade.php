@@ -53,7 +53,11 @@
                                                     <li>
                                                         <a href="#predictModal" class="nav-link bet-info" data-bs-toggle="modal" data-resource="{{$data}}" data-question="{{__($item->questions->first()->name)}}" data-match="{{__($item->name)}}">
                                                             <span>{{__($data->name)}} </span>
-                                                            <span>({{getAmount($data->dividend) / getAmount($data->divisor)}})</span>
+
+                                                            {{-- Odds Decimais --}}
+                                                            <span>{{getAmount($data->dividend) / getAmount($data->divisor) + 1}}</span>
+
+                                                            {{-- Odds Fracionárias --}}
                                                             {{-- <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span> --}}
                                                         </a>
                                                     </li>
