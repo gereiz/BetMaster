@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="dashboard__content">
                                     <h4 class="dashboard__title">{{$widget['totalBet']}}</h4>
-                                    <span class="subtitle text-white">@lang('Total')</span> <span class="text--base">@lang('Bets')</span>
+                                    <span class="subtitle text-white"><span class="text--base">@lang('Bets')</span> @lang('Total')</span> 
                                 </div>
                             </div>
                         </a>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="dashboard__content">
                                     <h4 class="dashboard__title">{{$widget['totalPending']}}</h4>
-                                    <span class="subtitle text-white">@lang('Pending')</span> <span class="text--base">@lang('Bets')</span>
+                                    <span class="subtitle text-white"><span class="text--base">@lang('Bets')</span> @lang('Pending')</span> 
                                 </div>
                             </div>
                         </a>
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="dashboard__content">
                                     <h4 class="dashboard__title">{{$widget['totalWin']}}</h4>
-                                    <span class="subtitle text-white">@lang('Won')</span> <span class="text--base">@lang('Bets')</span>
+                                    <span class="subtitle text-white"><span class="text--base">@lang('Bets')</span> @lang('Won')</span> 
                                 </div>
                             </div>
                         </a>
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="dashboard__content">
                                     <h4 class="dashboard__title">{{$widget['totalLose']}}</h4>
-                                    <span class="subtitle text-white">@lang('Lose')</span> <span class="text--base">@lang('Bets')</span>
+                                    <span class="subtitle text-white"><span class="text--base">@lang('Bets')</span> @lang('Lose')</span> 
                                 </div>
                             </div>
                         </a>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="dashboard__content">
                                     <h4 class="dashboard__title">{{$widget['totalRefund']}}</h4>
-                                    <span class="subtitle text-white">@lang('Refunded')</span> <span class="text--base">@lang('Bets')</span>
+                                    <span class="subtitle text-white"><span class="text--base">@lang('Bets')</span> @lang('Refunded')</span> 
                                 </div>
                             </div>
                         </a>
