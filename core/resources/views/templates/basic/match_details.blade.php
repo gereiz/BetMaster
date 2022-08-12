@@ -12,7 +12,7 @@
                             <h5 class="predict__header-title">
                                 {{__($pageTitle)}}
                             </h5>
-                        </div>
+                        </div> 
                         <div class="predict__area bg--section">
                             @forelse ($questions as $item)
                                 <div class="predict__item bg--body">
@@ -24,15 +24,25 @@
                                                 <li>
                                                     <a href="#predictModal" class="nav-link bet-info" data-bs-toggle="modal" data-resource="{{$data}}" data-question="{{__($item->name)}}" data-match="{{__($item->name)}}">
                                                         <span>{{__($data->name)}} </span>
-                                                        <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span>
+
+                                                        {{-- Odds Decimais --}}
+                                                        <span>{{number_format((getAmount($data->dividend) / getAmount($data->divisor) + 1), 2, ',', '.')}}</span>
+
+                                                        {{-- Odds Fracionárias --}}
+                                                        {{-- <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span> --}}
                                                     </a>
                                                 </li>
                                             @else
                                                 <li>
                                                     <a href="#loginModal" class="nav-link" data-bs-toggle="modal" >
                                                         <span>{{__($data->name)}} </span>
-                                                        <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span>
-                                                    </a>
+
+                                                        {{-- Odds Decimais --}}
+                                                        <span>{{number_format((getAmount($data->dividend) / getAmount($data->divisor) + 1), 2, ',', '.')}}</span>
+
+                                                        {{-- Odds Fracionárias --}}
+                                                        {{-- <span>{{getAmount($data->dividend)}} : {{getAmount($data->divisor)}}</span> --}}
+                                                </a>
                                                 </li>
                                             @endauth
                                         @endforeach
