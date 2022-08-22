@@ -9,7 +9,7 @@ use App\Rules\FileTypeValidate;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
-{
+{ 
 
     public function templates()
     {

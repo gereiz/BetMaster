@@ -88,7 +88,7 @@ class SiteController extends Controller
             $page->slug = 'blog';
             $page->save();
         }
-
+ 
         $sections = Page::where('tempname',$this->activeTemplate)->where('slug','blog')->first();
         $pageTitle = 'Blogs';
 
