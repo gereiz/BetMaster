@@ -68,7 +68,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
-    background: #059669;
+    background: #363636;
 }
 
 h1,
@@ -947,7 +947,7 @@ footer {
 .header-top-wrapper {
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 
 .header-top-wrapper .logo {
@@ -968,7 +968,7 @@ footer {
 
 .header-top-wrapper .right-area .cmn--btn {
     margin-right: 15px;
-    padding: 10px 25px 7px;
+    /* padding: 10px 25px 7px; */
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/global/css/line-awesome.min.css') }}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/magnific-popup.min.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/owl.min.css')}}">
+    <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/estilo.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/main.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/custom.css')}}">
     <link rel="stylesheet" href="{{ asset($activeTemplateTrue.'css/color.php?color1='.$general->base_color)}}">

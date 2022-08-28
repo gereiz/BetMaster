@@ -1,6 +1,11 @@
-<div class="header-top d-none d-md-block">
+<div class="header-top d-none d-md-block cabecalho">
     <div class="container">
         <div class="header-top-wrapper">
+            <div class="logo">
+                <a href="{{route('home')}}">
+                    <img src="{{ getImage(imagePath()['logoIcon']['path'] .'/logo.png') }}" alt="logo">
+                </a>
+            </div>
             <ul class="header-contact-info">
                 <li>
                     <a href="Mailto:{{@$headerFooterContent->data_values->email}}"><i class="las la-envelope"></i> {{@$headerFooterContent->data_values->email}}</a>
@@ -17,7 +22,7 @@
             @else
                 <div class="right-area d-none d-md-block">
                     <a href="{{route('user.register')}}" class="cmn--btn btn--sm">@lang('Register Now')</a>
-                    <a href="{{route('user.login')}}">
+                    <a href="{{route('user.login')}}" class="cmn--btn btn--sm">
                         <i class="las la-user"></i>
                         <span>@lang('Login Now')</span>
                     </a>
@@ -26,14 +31,10 @@
         </div>
     </div>
 </div>
-<div class="header-bottom bg--section">
+<div class="header-bottom cabecalho_2">
     <div class="container">
         <div class="header__wrapper">
-            <div class="logo">
-                <a href="{{route('home')}}">
-                    <img src="{{ getImage(imagePath()['logoIcon']['path'] .'/logo.png') }}" alt="logo">
-                </a>
-            </div>
+            
             <div class="header-bar ms-auto d-lg-none">
                 <span></span>
                 <span></span>
