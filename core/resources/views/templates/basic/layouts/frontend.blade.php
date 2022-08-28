@@ -196,7 +196,7 @@
                 returnAmount(investAmount);
                 modal.find('.betting-details').html(betDetails);
                 modal.find('.match-name').text(matchName);
-            });
+            }); 
 
 
             $(document).on("input", "#invest-amount", function() {
