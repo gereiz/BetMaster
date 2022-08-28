@@ -1,34 +1,32 @@
 <div class="header-top d-none d-md-block cabecalho">
-    <div class="container">
-        <div class="header-top-wrapper">
-            <div class="logo">
-                <a href="{{route('home')}}">
-                    <img src="{{ getImage(imagePath()['logoIcon']['path'] .'/logo.png') }}" alt="logo">
+    <div class="header-top-wrapper">
+        <div class="logo">
+            <a href="{{route('home')}}">
+                <img src="{{ getImage(imagePath()['logoIcon']['path'] .'/logo.png') }}" alt="logo">
+            </a>
+        </div>
+        <ul class="header-contact-info">
+            <li>
+                <a href="Mailto:{{@$headerFooterContent->data_values->email}}"><i class="las la-envelope"></i> {{@$headerFooterContent->data_values->email}}</a>
+            </li>
+            <li>
+                <a href="Tel:{{@$headerFooterContent->data_values->contact_no}}"><i class="las la-phone"></i> {{__(@$headerFooterContent->data_values->contact_no)}}</a>
+            </li>
+        </ul>
+
+        @auth
+            <div class="right-area d-none d-md-block">
+                <a href="{{route('user.home')}}" class="cmn--btn btn--sm mr-3">@lang('Dashboard')</a>
+            </div>
+        @else
+            <div class="right-area d-none d-md-block">
+                <a href="{{route('user.register')}}" class="cmn--btn btn--sm">@lang('Register Now')</a>
+                <a href="{{route('user.login')}}" class="cmn--btn btn--sm">
+                    <i class="las la-user"></i>
+                    <span>@lang('Login Now')</span>
                 </a>
             </div>
-            <ul class="header-contact-info">
-                <li>
-                    <a href="Mailto:{{@$headerFooterContent->data_values->email}}"><i class="las la-envelope"></i> {{@$headerFooterContent->data_values->email}}</a>
-                </li>
-                <li>
-                    <a href="Tel:{{@$headerFooterContent->data_values->contact_no}}"><i class="las la-phone"></i> {{__(@$headerFooterContent->data_values->contact_no)}}</a>
-                </li>
-            </ul>
-
-            @auth
-                <div class="right-area d-none d-md-block">
-                    <a href="{{route('user.home')}}" class="cmn--btn btn--sm mr-3">@lang('Dashboard')</a>
-                </div>
-            @else
-                <div class="right-area d-none d-md-block">
-                    <a href="{{route('user.register')}}" class="cmn--btn btn--sm">@lang('Register Now')</a>
-                    <a href="{{route('user.login')}}" class="cmn--btn btn--sm">
-                        <i class="las la-user"></i>
-                        <span>@lang('Login Now')</span>
-                    </a>
-                </div>
-            @endguest
-        </div>
+        @endguest
     </div>
 </div>
 <div class="header-bottom cabecalho_2">

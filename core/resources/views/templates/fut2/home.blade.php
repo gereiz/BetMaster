@@ -5,8 +5,8 @@
         $bannerElements = getContent('banner.element');
     @endphp
 
-    <main class="all-sections">
-        <div class="container-fluid">
+    <main class="">
+        <div class="">
             <div class="row g-4">
                 @include($activeTemplate.'partials.leftbar')
 
