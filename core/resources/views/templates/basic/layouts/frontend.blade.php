@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/global/css/line-awesome.min.css') }}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/magnific-popup.min.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/owl.min.css')}}">
+    <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/estilo.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/main.css')}}">
     <link rel="stylesheet" href="{{asset($activeTemplateTrue.'css/custom.css')}}">
     <link rel="stylesheet" href="{{ asset($activeTemplateTrue.'css/color.php?color1='.$general->base_color)}}">
@@ -196,7 +197,7 @@
                 returnAmount(investAmount);
                 modal.find('.betting-details').html(betDetails);
                 modal.find('.match-name').text(matchName);
-            }); 
+            });
 
 
             $(document).on("input", "#invest-amount", function() {
@@ -205,7 +206,7 @@
             });
 
             function returnAmount(investAmount){
-                var returnAmount = (parseFloat(investAmount).toFixed(2) / parseFloat(investRate).toFixed(2)) * parseFloat(returnRate).toFixed(2);
+                var returnAmount = (parseFloat(investAmount).toFixed(2) * (parseFloat(investRate).toFixed(2)) + parseFloat(returnRate).toFixed(2));
                 if (returnAmount) {
                     $(document).find('#return-amount').text(parseFloat(returnAmount).toFixed(2) + ' {{__($general->cur_text)}}');
                 }else{
