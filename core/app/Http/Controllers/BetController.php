@@ -76,7 +76,7 @@ class BetController extends Controller
             });
         })->findOrFail($request->option_id);
 
-        $returnAmount = ($request->invest_amount / $option->dividend) * $option->divisor;
+        $returnAmount = $request->invest_amount * ($option->dividend + $option->divisor);
 
         $user->balance -= $request->invest_amount;
         $user->save();
