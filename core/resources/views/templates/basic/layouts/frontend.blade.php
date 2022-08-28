@@ -205,7 +205,7 @@
             });
 
             function returnAmount(investAmount){
-                var returnAmount = (parseFloat(investAmount).toFixed(2) / (parseFloat(investRate).toFixed(2)) + parseFloat(returnRate).toFixed(2));
+                var returnAmount = (parseFloat(investAmount).toFixed(2) / parseFloat(investRate).toFixed(2)) * parseFloat(returnRate).toFixed(2);
                 if (returnAmount) {
                     $(document).find('#return-amount').text(parseFloat(returnAmount).toFixed(2) + ' {{__($general->cur_text)}}');
                 }else{
