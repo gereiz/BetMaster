@@ -7,7 +7,7 @@ use App\Models\CommissionLog;
 use App\Models\EmailLog;
 use App\Models\Transaction;
 use App\Models\UserLogin;
-use App\Models\Match;
+use App\Models\Match; 
 use Illuminate\Http\Request;
 
 class ReportController extends Controller
