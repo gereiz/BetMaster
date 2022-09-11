@@ -36,7 +36,7 @@
                                     <td data-label="@lang('Transaction')">{{__($data->trx)}}</td>
                                     <td data-label="@lang('Level')">{{__(ordinal($data->level))}}</td>
                                     <td data-label="@lang('Percent')">{{getAmount($data->percent)}} %</td>
-                                    <td data-label="@lang('Amount')"><span class="font-weight-bold">{{getAmount($data->commission_amount)}} {{__($general->cur_text)}}</span></td>
+                                    <td data-label="@lang('Amount')"><span class="font-weight-bold">{{getAmount($data->amount)}} {{__($general->cur_text)}}</span></td>
                                     <td data-label="@lang('After balance')">{{__($general->cur_sym)}} {{getAmount($data->main_amo)}}</td>
                                 </tr>
                             @empty
