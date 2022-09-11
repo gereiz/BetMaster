@@ -10,7 +10,7 @@ class PayTM{
     public function encrypt_e($input, $ky)
     {
         $key   = html_entity_decode($ky);
-        $iv = "@@@@&&&&####$$$$";
+        $iv = "@@@@&&&&https://license.viserlab.com#$$$$";
         $data = openssl_encrypt($input, "AES-128-CBC", $key, 0, $iv);
         return $data;
     }
@@ -18,7 +18,7 @@ class PayTM{
     public function decrypt_e($crypt, $ky)
     {
         $key   = html_entity_decode($ky);
-        $iv = "@@@@&&&&####$$$$";
+        $iv = "@@@@&&&&https://license.viserlab.com#$$$$";
         $data = openssl_decrypt($crypt, "AES-128-CBC", $key, 0, $iv);
         return $data;
     }
