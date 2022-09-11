@@ -7,7 +7,8 @@ use App\Models\GeneralSetting;
 use App\Http\Controllers\Gateway\PaymentController;
 use App\Http\Controllers\Controller;
 use Session;
-
+use Illuminate\Http\Request;
+ 
 class ProcessController extends Controller
 {
 	public static function process($deposit)
