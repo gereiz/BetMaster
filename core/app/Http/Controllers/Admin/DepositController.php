@@ -187,7 +187,7 @@ class DepositController extends Controller
         $transaction->post_balance = $user->balance;
         $transaction->charge = $deposit->charge;
         $transaction->trx_type = '+';
-        $transaction->details = 'Depósito Via ' . $deposit->gatewayCurrency()->name;
+        $transaction->details = 'Deposit Via ' . $deposit->gatewayCurrency()->name;
         $transaction->trx =  $deposit->trx;
         $transaction->save();
 

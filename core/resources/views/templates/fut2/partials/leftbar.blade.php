@@ -9,7 +9,7 @@
         <span class="close--sidebar d-xl-none">
             <i class="las la-times"></i>
         </span>
-        <div class="sidebar__widget widget-categorias">
+        <div class="sidebar__widget">
             <div class="sidebar__widget-header">
                 <h5 class="title">@lang('Categories')</h5>
             </div>
