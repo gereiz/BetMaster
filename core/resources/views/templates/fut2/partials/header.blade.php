@@ -11,7 +11,7 @@
             </li>
             <li>
                 <a href="Tel:{{@$headerFooterContent->data_values->contact_no}}"><i class="las la-phone"></i> {{__(@$headerFooterContent->data_values->contact_no)}}</a>
-            </li> 
+            </li>
         </ul>
 
         @auth
@@ -29,7 +29,7 @@
         @endguest
     </div>
 </div>
-<div class="header-bottom cabecalho_2  mb-2">
+<div class="header-bottom cabecalho_2">
     <div class="container">
         <div class="header__wrapper">
             

@@ -1,1 +1,1 @@
-<?php $timezone = 'America/Sao_Paulo' ?>
+<?php $timezone = 'Asia/Dhaka' ?>
