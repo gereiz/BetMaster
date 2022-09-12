@@ -7,6 +7,7 @@ use App\Models\GeneralSetting;
 use App\Http\Controllers\Gateway\PaymentController;
 use App\Http\Controllers\Controller;
 use Session;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
  
 class ProcessController extends Controller
