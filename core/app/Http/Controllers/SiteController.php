@@ -174,7 +174,7 @@ class SiteController extends Controller
 
     public function cookieAccept(){
         session()->put('cookie_accepted',true);
-        return response()->json(['success' => 'Cookie accepted successfully']);
+        return response()->json(['success' => 'Cookies aceitos!']);
     }
 
     public function subscriberStore(Request $request) {
