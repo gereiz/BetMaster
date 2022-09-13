@@ -82,7 +82,7 @@
                                     </div>
                                 @endif
                                 <div class="form--group mb-0">
-                                    <button type="submit" class="cmn--btn btn-block justify-content-center w-100">Pay Now</button>
+                                    <button type="submit" class="cmn--btn btn-block justify-content-center w-100">@lang('Pay Now)'</button>
                                 </div>
                             </form>
                         </div>
